@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>IntheRoom</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  	<link rel="stylesheet" type="text/css" href="../../ようこそ.css">
+
+
+
+
+  	</head>
+
+    <div class="content-box">
+    <nav class="menu-bar">
+      <ul>
+        <li><a href="../../index.html">About</a></li>
+        <li class="dropdown">
+          <a href="inTheRoom.html"	class="dropdown-toggle">Malawi Macro</a>
+              <ul class="dropdown-menu">
+                    <li><a href="../contents/monetaryP.html">Monetary Policy</a></li>
+                    <li><a href="../contents/realsec.html">Real Sector</a></li>
+                    <li><a href="../contents/fiscal.html">Fiscal Policy</a></li>
+             </ul>
+      </li>
+      <li><a href="#">Country Contexts</a></li>
+      <li><a href="#">Exploratory Studies</a></li>
+      </ul>
+    </nav>
+
+    <body>
+        <br>
+        <br>
+        <h1>THE MONETARY POLICY TRANSMISSION MECHANISM: IS IT IN THE ROOM WITH US?</h1>
+        <br>
+        <h2>INTRODUCTION</h2>
+        <p class = "Introduction">
+
+          Since 2019, people in Malawi have been very concerned with inflation and by extension the central bank’s role in controlling it.
+          Anecdotally, the credibility of the RBM’s monetary policy, among Malawians, has been diminishing in recent years and many people have questioned its policy choices. A common argument is the following:
+
+          <center>“If monetary policy is not effective in Malawi, then why raise interest rates and discourage borrowing and investment?”</center>
+          <br>
+          People’s distrust comes from at least three valid sources:
+
+          <ul>
+                <li>	At the best of times, the monetary policy transmission mechanism is
+                  difficult to measure. This is particularly the case in low income countries
+                  which have conditions like underdevelopment in their financial sectors,
+                  particularly, in low income countries with a comparatively underdeveloped
+                  financial sector. </li>
+                <li>	The second is that there is a direction of research into monetary policy
+                  in Malawi arguing that the monetary policy transmission mechanism is not
+                  strong.</li>
+                <li>	Third, there have been periods in Malawi’s economic history where there is evidence
+                   of fiscal dominance through the extensive rates of public sector domestic borrowing.
+                   Such can confound the impacts of contractionary monetary policy.</li>
+          </ul>
+
+          So, there are disputes concerning the role of central bank in Malawi’s inflation.
+          I, however, disagree and I with back up my evidence with data.
+
+        </p>
+
+        <br>
+        <h2>DATA</h2>
+
+
+        <figure style="text-align: center">
+            <img src="interestRBMpic.png" alt="A picture of the interest rate data webpage for the RBM" width="500">
+            <figcaption style="font-size: 14px; color: black;">Behold </figcaption>
+        </figure>
+        <figure style = "text-align: center;">
+            <img src="inflationRBMpic.png" alt="A picture of the inflation data webpage for the RBM" width="500">
+            <<figcaption style="font-size: 14px; color: black"> Thanks RBM</figcaption>
+        </figure>
+
+        <p class = "Data">
+          The cool thing about Malawi is that our central bank has been collecting data on
+          the policy rate since the 90s! We also have CPI data ranging until the 2000s which is less
+          exciting but still good to see. Both are available on their website.
+          <br>
+          Correlations! We win! Now, let’s go home and wait for the confirmed second season of Dungeon Meshi!
+          <br>
+        </p>
+
+        <br>
+        <h2>A SIMPLE CORRELATION</h2>
+        <figure style="text-align: center;">
+            <img src="C:\Users\USER\Documents\stata code\interest rates\final\threeCors.png"
+            alt="Inflations Policy Rate Correlations" width="500">
+        </figure>
+
+        <p class = "Cor1">
+          The positive correlations between these variables implies a relationship, which we want to see. The absence of this implies that the policy rate and inflation have nothing to do with each other.
+
+
+        </p>
+        <figure style="text-align: center;">
+            <img src = "C:\Users\USER\Documents\stata code\interest rates\final\InterbankCors.png" alt = "Policy Rate Interbank Rate Correlations" width = "500">
+        </figure>
+
+        <p class = "Cor2">
+          It’s even better for the policy rate and interbank rate. Its positive looking correlation implies that raising the policy rate will also raise the interbank rate.
+          It’s even better for the policy rate and interbank rate. Its positive looking correlation implies that raising the policy rate will also raise the interbank rate.
+        </p>
+        <br>
+
+        <figure style="text-align: center;">
+            <img src="hera.png" alt="Hera from Kaos Looking Smug" width="500">
+            <figcaption style="font-size: 14px; color: black ">Sucks to be you, Kaos fans!</figcaption>
+        </figure>
+
+
+        <br>
+        <h2>A PROBLEM WITH SIMPLE CORRELATIONS</h2>
+        <p class = "CorBad">
+          But wait. You might have some questions.
+          <ul>
+
+              <li>Whether this is a real correlation or a coincidence (are inflation and policy rate just moving in the same direction) </li>
+                  <center>“Hey Spreadsheet Woman, so do you also think sunspots make banks fail”</center>
+                  Correlation can only tell us that there is a linear relationship between two variables. Correlations cannot   tell us which article causes the other. It also cannot tell us if the articles actually have a relationship or if its spurious.
+              <br>
+
+              <li>The direction of the relationship (whether inflation influences the policy rate or the policy rate influences inflation)</li>
+                  <center>“Hey Spreadsheet Woman, why are all the correlations positive?”</center>
+                  A linear regression can help us find the direction of the correlation, which causes the other and the time period. In a simple correlation, this information is muddied.
+              <br>
+
+              <li>The magnitude of the impact and whether this is positive or negative (even if policy rate influences inflation, does it do so to a degree that even matters?)</li>
+                  <center>“I could have told you this and I interned at a bank for six months!”</center>
+                  Yes, good for you. But a regression can give us a numerical value at the margin to measure the degree that these variables influence each other. This is what makes the social a science.
+
+
+          </ul>
+
+        </p>
+
+        </body>
+        </div>
+
+        </html>

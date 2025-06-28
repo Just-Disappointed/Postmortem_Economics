@@ -1,0 +1,98 @@
+
+
+html {
+	background-image: linear-gradient(to bottom, #b2a1b8, #f4e9f7);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-position: center;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 16px 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+.reason1{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+
+h4 {
+	text-align: center;
+}
+
+
+.menu-bar {
+	background-color: #333;
+	color: #fff;
+	padding: lem;
+	text-align: center;
+}
+
+.menu-bar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-bar li{
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+}
+
+.menu-bar a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu-bar a:hover {
+	color: #ccc;
+}
+
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #333;
+	padding: 0.5em;
+}
+
+
+.dropdown-menu li{
+	display: block;
+	margin-right: 0;
+}
+
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+
+
+.content-box{
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	width: 60%;
+	min-height: 100vh;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	overflow-y: auto;
